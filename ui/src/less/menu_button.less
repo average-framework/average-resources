@@ -1,0 +1,34 @@
+@transitionTime: 0.3s;
+@transitionColor: #ff4e4e;
+
+.btn {
+    width: 100%;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0px;
+    border-left: solid 3px white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4px;
+    transition: all @transitionTime;
+    pointer-events: all;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 16px;
+
+    h1 {
+        font-family: 'Segoe UI';
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        transition: all @transitionTime;
+    }
+}
+
+.btn:hover {
+    background: rgba(@transitionColor, 0.3);
+}

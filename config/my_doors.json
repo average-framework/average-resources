@@ -1,0 +1,82 @@
+[
+	{
+		"Position": {
+			"X": -306.89,
+			"Y": 780.11,
+			"Z": 117.72
+		},
+		"IsLocked": false,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -309.06,
+			"Y": 779.73,
+			"Z": 117.72
+		},
+		"IsLocked": false,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -301.94,
+			"Y": 771.75,
+			"Z": 117.72
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -311.75,
+			"Y": 774.67,
+			"Z": 117.72
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -311.06,
+			"Y": 770.12,
+			"Z": 117.7
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -302.93,
+			"Y": 767.6,
+			"Z": 117.69
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -301.51,
+			"Y": 762.98,
+			"Z": 117.73
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	},
+	{
+		"Position": {
+			"X": -307.76,
+			"Y": 766.34,
+			"Z": 117.7
+		},
+		"IsLocked": true,
+		"Range": 1.5,
+		"JobName": "bank"
+	}
+]

@@ -1,0 +1,24 @@
+{
+    "DefaultMoney": 80.0,
+    "DefaultBank": 0.0,
+    "DefaultCamera": {
+        "CamCoordOffset": [2.5, 4.5, 1.0],
+        "PointCamOffset": [0.0, 0.0, 1.0],
+        "Fov": 35.0
+    },
+    "FaceCamera": {
+        "CamCoordOffset": [1.0, 1.0, 0.0],
+        "PointCamOffset": [0.1, 0.0, 0.0],
+        "Fov": 35.0
+    },
+    "BodyCamera": {
+        "CamCoordOffset": [1.0, 2.0, 0.0],
+        "PointCamOffset": [0.1, 0.0, 0.0],
+        "Fov": 35.0
+    },
+    "FootCamera": {
+        "CamCoordOffset": [1.0, 1.5, -1.0],
+        "PointCamOffset": [0.1, 0.0, -1.0],
+        "Fov": 35.0
+    }
+}

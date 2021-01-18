@@ -1,0 +1,121 @@
+.hud {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+
+    .hud-container-cooldown {
+        width: 100vw;
+        height: calc(100% - 110px);
+        background: transparent;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.9) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: alpha 0.5s;
+
+        p {
+            color: white;
+            font-size: 164px;
+            font-family: cf;
+            transition: alpha 0.5s;
+        }
+    }
+
+    .hud-container {
+        width: 100%;
+        height: 110px;
+        background: blue;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.60) 75%, rgba(0, 0, 0, 0.9) 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        transition: alpha 0.5s;
+
+        .hud-container-element-center {
+            width: 600px;
+            height: 50px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: alpha 0.5s;
+
+            p {
+                font-family: 'Segoe UI';
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+                padding-left: 6px;
+                padding-right: 6px;
+                margin: 2px;
+            }
+        }
+
+        .hud-container-element {
+            width: 300px;
+            height: 60px;
+            background: transparent;
+            display: flex;
+            transition: alpha 0.5s;
+
+            .hud-element {
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                padding-left: 3px;
+                padding-right: 3px;
+
+                .hud-element-bar-background {
+                    width: 100%;
+                    height: 8px;
+                    background: rgba(255, 255, 255, 0.3);
+
+                    .hud-element-bar-foreground {
+                        width: 100%;
+                        height: 8px;
+                        background: white;
+                    }
+                }
+
+                .hud-element-icon-container {
+                    width: 100%;
+                    height: 52px;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .hud-element-icon-img {
+                        width: 24px;
+                        height: 24px;
+                        background: transparent;
+                        background-size: 100% 100%;
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#hud-element-health-icon-img {
+    background-image: url("../img/heart.png");
+}
+
+#hud-element-hunger-icon-img {
+    background-image: url("../img/hunger.png");
+}
+
+#hud-element-thirst-icon-img {
+    background-image: url("../img/water-drop.png");
+}
+
+#hud-element-stamina-icon-img {
+    background-image: url("../img/flash.png");
+}
+
+.hudhidden {
+    opacity: 0
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UI Render</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada One">
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet/less" type="text/css" href="./less/hud.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_button.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_checkbox_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_date_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_list_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_slider_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_slider_selector_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_stats_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/menu_textbox_item.less" />
+    <link rel="stylesheet/less" type="text/css" href="./less/hit_menu.less" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+    <div id="hud" class="hud" style="display: none;">
+        <div id="hud-element-death-screen" class="hud-container-cooldown">
+            <p id="hud-element-cooldown-text">00:00:00</p>
+        </div>
+
+        <div id="hud-container" class="hud-container">
+            <div id="hud-element-player" class="hud-container-element">
+                <div class="hud-element">
+                    <div class="hud-element-bar-background">
+                        <div id="hud-element-health-bar" class="hud-element-bar-foreground">
+
+                        </div>
+                    </div>
+
+                    <div class="hud-element-icon-container">
+                        <div id="hud-element-health-icon-img" class="hud-element-icon-img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hud-element">
+                    <div class="hud-element-bar-background">
+                        <div id="hud-element-hunger-bar" class="hud-element-bar-foreground">
+
+                        </div>
+                    </div>
+
+                    <div class="hud-element-icon-container">
+                        <div id="hud-element-hunger-icon-img" class="hud-element-icon-img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hud-element">
+                    <div class="hud-element-bar-background">
+                        <div id="hud-element-thirst-bar" class="hud-element-bar-foreground">
+
+                        </div>
+                    </div>
+
+                    <div class="hud-element-icon-container">
+                        <div id="hud-element-thirst-icon-img" class="hud-element-icon-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hud-element-helptext" class="hud-container-element-center">
+                <p id="hud-element-text-left">Appuyer sur </p>
+                <p id="hud-element-text-key" style="border: white solid 3px; border-radius: 5px; font-weight: 800">ALT</p>
+                <p id="hud-element-text-right">pour réapparaitre</p>
+            </div>
+
+            <div id="hud-element-horse" class="hud-container-element">
+                <div class="hud-element">
+                    <div class="hud-element-bar-background">
+                        <div id="hud-element-horse-health-bar" class="hud-element-bar-foreground">
+
+                        </div>
+                    </div>
+
+                    <div class="hud-element-icon-container">
+                        <div id="hud-element-health-icon-img" class="hud-element-icon-img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hud-element">
+                    <div class="hud-element-bar-background">
+                        <div id="hud-element-horse-stamina-bar" class="hud-element-bar-foreground">
+
+                        </div>
+                    </div>
+
+                    <div class="hud-element-icon-container">
+                        <div id="hud-element-stamina-icon-img" class="hud-element-icon-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="menu" style="display: none;">
+        <div class="content">
+            <h2 id="menu-title">TITLE</h2>
+            
+            <div class="separator"></div>
+
+            <div id="menu-container" class="menu-container">
+                
+            </div>
+            <div class="separator"></div>
+        </div>
+    </div>
+
+    <div id="hit-menu" style="display: none;">
+        <a class="crosshair" href="#"></a>
+        <ul id="hit-menu-options" class="hmenu">
+        </ul>
+    </div>
+
+    <script src="./js/ui.js"></script>
+    <script src="./js/hud.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/hit_menu.js"></script>
+</body>
+
+</html>
