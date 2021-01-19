@@ -7,5 +7,7 @@
         "Database": "average",
         "Username": "root",
         "Password": ""
-    }
+    },
+
+    "UseWhitelistSystem": true
 }
