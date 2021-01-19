@@ -1,11 +1,11 @@
 $(() => {
     // $('#hud').fadeOut(0);
-    $('#hud-element-player').fadeOut(0)
-    $('#hud-element-horse').fadeOut(0)
-    $('#hud-element-helptext').fadeOut(0)
-    $('#hud-element-death-screen').fadeOut(0)
-    $('#hud-element-cooldown-text').fadeOut(0)
-    $('#hud-container').fadeOut(0)
+    // $('#hud-element-player').fadeOut(0)
+    // $('#hud-element-horse').fadeOut(0)
+    // $('#hud-element-helptext').fadeOut(0)
+    // $('#hud-element-death-screen').fadeOut(0)
+    // $('#hud-element-cooldown-text').fadeOut(0)
+    // $('#hud-container').fadeOut(0)
 
     window.addEventListener("message", function (event) {
         const data = event.data || event.detail
@@ -42,22 +42,21 @@ $(() => {
             } else {
                 $('#hud').fadeOut(500)
             }
-        } else if (data.request === 'hud_element_visibility') {
+        }else if (data.request === 'hud_element_visibility') {
+            console.log("vis: " + data.element + ", " + data.value)
             switch (data.element) {
                 case "player":
                     if (data.value) {
-                        // $('#hud-element-player').removeClass("hudhidden")
-                        $('#hud-element-player').fadeIn(data.duration)
+                        $('#hud-element-player').fadeTo(data.duration, 1)
                     } else {
-                        // $('#hud-element-player').addClass("hudhidden")
-                        $('#hud-element-player').fadeOut(data.duration)
+                        $('#hud-element-player').fadeTo(data.duration, 0)
                     }
                     break
                 case "horse":
                     if (data.value) {
-                        $('#hud-element-horse').fadeIn(data.duration)
+                        $('#hud-element-horse').fadeTo(data.duration, 1)
                     } else {
-                        $('#hud-element-horse').fadeOut(data.duration)
+                        $('#hud-element-horse').fadeTo(data.duration, 0)
                     }
                     break
                 case "helptext":
@@ -69,23 +68,23 @@ $(() => {
                     break
                 case "deathScreen":
                     if (data.value) {
-                        $('#hud-element-death-screen').fadeIn(data.duration)
+                        $('#hud-element-death-screen').fadeTo(data.duration, 1)
                     } else {
-                        $('#hud-element-death-screen').fadeOut(data.duration)
+                        $('#hud-element-death-screen').fadeTo(data.duration, 0)
                     }
                     break
                 case "cooldown":
                     if (data.value) {
-                        $('#hud-element-cooldown-text').fadeIn(data.duration)
+                        $('#hud-element-cooldown-text').fadeTo(data.duration, 1)
                     } else {
-                        $('#hud-element-cooldown-text').fadeOut(data.duration)
+                        $('#hud-element-cooldown-text').fadeTo(data.duration, 0)
                     }
                     break
                 case "container":
                     if (data.value) {
-                        $('#hud-container').fadeIn(data.duration)
+                        $('#hud-container').fadeTo(data.duration, 1)
                     } else {
-                        $('#hud-container').fadeOut(data.duration)
+                        $('#hud-container').fadeTo(data.duration, 0)
                     }
                     break
             }
