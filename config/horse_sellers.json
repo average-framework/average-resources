@@ -1,0 +1,70 @@
+[{
+    "Name": "Valentine",
+    "Interact": {
+        "Position": {
+            "X": -364.85,
+            "Y": 791.59,
+            "Z": 116.18
+        },
+        "Radius": 1.0
+    },
+    "Buy": {
+        "CameraPosition": {
+            "X": -367.92,
+            "Y": 788.92,
+            "Z": 116.1
+        },
+        "CameraLookAtOffset": {
+            "X": 1.5,
+            "Y": 0.0,
+            "Z": 1.0
+        },
+        "CameraFov": 50.0,
+        "Position": {
+            "X": -371.21,
+            "Y": 787.12,
+            "Z": 115.16
+        },
+        "Heading": 253.19
+    },
+    "Customization": {
+        "CameraPosition": {
+            "X": -369.4,
+            "Y": 789.2,
+            "Z": 117.15
+        },
+        "CameraLookAtOffset": {
+            "X": 1.25,
+            "Y": 0.0,
+            "Z": 0.0
+        },
+        "CameraFov": 50.0,
+        "Position": {
+            "X": -369.11,
+            "Y": 792.91,
+            "Z": 115.14
+        },
+        "Heading": 140.80
+    },
+    "Blip": {
+        "Position": {
+            "X": -369.6,
+            "Y": 786.86,
+            "Z": 116.16
+        },
+        "Sprite": 1938782895,
+        "Label": "Maréchal Ferrant",
+        "Scale": 1.0
+    },
+    "Npc": {
+        "Position": {
+            "X": -365.39,
+            "Y": 792.57,
+            "Z": 115.18,
+            "W": 199.42
+        },
+        "Model": "U_M_M_BWMSTABLEHAND_01",
+        "ModelVariation": 0,
+        "Scenario": ""
+    }
+}]

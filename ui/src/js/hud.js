@@ -43,7 +43,6 @@ $(() => {
                 $('#hud').fadeOut(500)
             }
         }else if (data.request === 'hud_element_visibility') {
-            console.log("vis: " + data.element + ", " + data.value)
             switch (data.element) {
                 case "player":
                     if (data.value) {
